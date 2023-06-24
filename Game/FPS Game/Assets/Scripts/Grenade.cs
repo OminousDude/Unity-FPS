@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grenade : MonoBehaviour
-{
+public class Grenade : MonoBehaviour {
     public GameObject explosionEffect;
 
     public float delay = 3f;
@@ -12,18 +11,27 @@ public class Grenade : MonoBehaviour
     public float radius = 5f;
     public float force = 1000f;
 
-    public AudioSource source;
-    public AudioClip clip;
+    public float throwForce;
+
+    private AudioSource source;
+
+    public static void Throw(GameObject grenadePrefab, Transform transform) {
+        Instantiate(grenadePrefab, transform.position, transform.rotation);
+    }
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
+        source = GetComponent<AudioSource>();
+
         countdown = delay;
+
+        var grenadeRB = GetComponent<Rigidbody>();
+
+        grenadeRB.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         countdown -= Time.deltaTime;
         if (countdown <= 0 && !hasExploded) {
             source.Play();
@@ -31,10 +39,8 @@ public class Grenade : MonoBehaviour
         }
     }
 
-    void Explode () {
+    void Explode() {
         GameObject effectRB = Instantiate(explosionEffect, transform.position, transform.rotation).gameObject;
-
-        source.PlayOneShot(clip);
 
         Collider[] collsToDestroy = Physics.OverlapSphere(transform.position, radius);
 
@@ -58,10 +64,10 @@ public class Grenade : MonoBehaviour
 
         hasExploded = true;
 
-        Destroy(gameObject);
+        GetComponent<Renderer>().enabled = false;
+
+        Destroy(gameObject, 5f);
 
         Destroy(effectRB, 5f);
     }
-
-    public float GetDelay() { return delay; }
 }

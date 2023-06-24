@@ -114,9 +114,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.0358991
-  m_Height: 0.11290038
+  m_Height: 0.12579493
   m_Direction: 1
-  m_Center: {x: -0.0009902224, y: 0.05645018, z: 0.00051542866}
+  m_Center: {x: -0.0009903793, y: 0.059422053, z: 0.00051552785}
 --- !u!114 &8199082534869698353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,10 +132,9 @@ MonoBehaviour:
   explosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 3}
   delay: 3.5
-  radius: 6
+  radius: 8.5
   force: 750
-  source: {fileID: -1528903234391155693}
-  clip: {fileID: 8300000, guid: fc96116dc3c141440aabb5605744fea2, type: 3}
+  throwForce: 15
 --- !u!82 &-1528903234391155693
 AudioSource:
   m_ObjectHideFlags: 0
@@ -157,7 +156,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 1000
+  MaxDistance: 250
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 0
@@ -192,7 +191,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
