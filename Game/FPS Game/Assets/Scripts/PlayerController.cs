@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
@@ -16,6 +17,9 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 	[SerializeField] float mouseSensitivity, sprintSpeed, walkSpeed, jumpForce, smoothTime, dashPower;
 
 	[SerializeField] Item[] items;
+
+    public float fireRate = 10;
+    private float lastShot;
 
     int itemIndex;
 	int previousItemIndex = -1;
@@ -99,13 +103,25 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 				EquipItem(itemIndex - 1);
 			}
 		}
+		
+		var item = items[itemIndex];
 
-		if(Input.GetMouseButtonDown(0))
-		{
-			items[itemIndex].Use();
-		}
+		if (!item.GetComponent<SingleShotGun>().isAuto) {
+			if (Input.GetMouseButtonDown(0)) {
+				item.Use();
+			}
+        }
+		
+		if (item.GetComponent<SingleShotGun>().isAuto) {
+			if (Input.GetMouseButton(0)) {
+				if (Time.time - lastShot > 1 / fireRate) {
+					lastShot = Time.time;
+					item.Use();
+				}
+			}
+        }
 
-		if(transform.position.y < -25f) // Die if you fall out of the world
+        if (transform.position.y < -25f) // Die if you fall out of the world
 		{
 			Die();
 		}

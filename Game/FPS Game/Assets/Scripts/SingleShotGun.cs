@@ -21,6 +21,8 @@ public class SingleShotGun : Gun {
 
     public LayerMask layerPassThrough;
 
+    public bool isAuto; 
+
     void Awake() {
         PV = GetComponent<PhotonView>();
     }
