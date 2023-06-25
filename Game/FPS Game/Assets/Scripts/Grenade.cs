@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Grenade : MonoBehaviour {
+    [SerializeField] ItemInfo itemInfo;
     public GameObject explosionEffect;
 
     public float delay = 3f;
@@ -31,16 +30,27 @@ public class Grenade : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
-        countdown -= Time.deltaTime;
+    void FixedUpdate() {
+        countdown -= Time.fixedDeltaTime;
         if (countdown <= 0 && !hasExploded) {
             source.Play();
             Explode();
         }
+        Debug.Log(itemInfo);
     }
 
     void Explode() {
         GameObject effectRB = Instantiate(explosionEffect, transform.position, transform.rotation).gameObject;
+
+        Collider[] collsToDamage = Physics.OverlapSphere(transform.position, radius);
+        foreach (var col in collsToDamage)
+        {
+            PlayerController playerController = col.GetComponent<PlayerController>();
+            if (playerController != null)
+            {
+                col.gameObject.GetComponent<IDamageable>()?.TakeDamage(((GunInfo)itemInfo).damage);
+            }
+        }
 
         Collider[] collsToDestroy = Physics.OverlapSphere(transform.position, radius);
 
@@ -51,7 +61,7 @@ public class Grenade : MonoBehaviour {
                 destructible.Destroy();
             }
         }
-
+        
         Collider[] collsToMove = Physics.OverlapSphere(transform.position, radius);
 
         foreach (var col in collsToMove) {
@@ -70,4 +80,5 @@ public class Grenade : MonoBehaviour {
 
         Destroy(effectRB, 5f);
     }
+    
 }

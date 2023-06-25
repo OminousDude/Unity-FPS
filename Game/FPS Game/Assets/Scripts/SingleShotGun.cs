@@ -48,7 +48,7 @@ public class SingleShotGun : Gun {
                     if (hit.collider.gameObject.name == "Head") {
                         hit.collider.gameObject.GetComponentInParent<IDamageable>()?.TakeDamage(((GunInfo)itemInfo).damage * 2);
                     } else {
-                        hit.collider.gameObject.gameObject.GetComponent<IDamageable>()?.TakeDamage(((GunInfo)itemInfo).damage);
+                        hit.collider.gameObject.GetComponent<IDamageable>()?.TakeDamage(((GunInfo)itemInfo).damage);
                     }
                 }
 
