@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Networking.Types;
 
 public class Grenade : MonoBehaviour {
     [SerializeField] ItemInfo itemInfo;
@@ -12,7 +13,9 @@ public class Grenade : MonoBehaviour {
 
     public float throwForce;
 
-    private AudioSource source;
+    public AudioSource[] sources;
+
+    public AudioSource bounceSound;
 
     public static void Throw(GameObject grenadePrefab, Transform transform) {
         Instantiate(grenadePrefab, transform.position, transform.rotation);
@@ -20,23 +23,23 @@ public class Grenade : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        source = GetComponent<AudioSource>();
-
-        countdown = delay;
+        countdown = Random.Range(delay - delay/3, delay + delay/3);
 
         var grenadeRB = GetComponent<Rigidbody>();
 
-        grenadeRB.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
+        var randomVal = Random.Range(throwForce - throwForce / 3, throwForce + throwForce / 3);
+
+        grenadeRB.AddForce(transform.forward * randomVal, ForceMode.VelocityChange);
     }
 
     // Update is called once per frame
     void FixedUpdate() {
         countdown -= Time.fixedDeltaTime;
         if (countdown <= 0 && !hasExploded) {
+            var source = sources[Random.Range(0, sources.Length-1)];
             source.Play();
             Explode();
         }
-        Debug.Log(itemInfo);
     }
 
     void Explode() {
@@ -80,5 +83,10 @@ public class Grenade : MonoBehaviour {
 
         Destroy(effectRB, 5f);
     }
-    
+
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.collider.gameObject.layer == 0 || collision.collider.gameObject.layer == 3) {
+            bounceSound.Play();
+        }
+    }
 }
