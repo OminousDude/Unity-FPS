@@ -132,8 +132,8 @@ MonoBehaviour:
   itemInfo: {fileID: 11400000, guid: 6334ce0908a254d42b64eabceb536185, type: 2}
   explosionEffect: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664,
     type: 3}
-  delay: 3.5
-  radius: 8.5
+  delay: 2.5
+  radius: 10
   force: 750
   throwForce: 15
 --- !u!82 &-1528903234391155693

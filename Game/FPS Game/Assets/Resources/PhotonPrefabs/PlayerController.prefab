@@ -61,6 +61,9 @@ MonoBehaviour:
   bulletHitEffect: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   capsuleCollider: {fileID: 4160833081701763914}
+  layerPassThrough:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &6621888072070778767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1254,6 +1257,9 @@ MonoBehaviour:
   bulletHitEffect: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   capsuleCollider: {fileID: 4160833081701763914}
+  layerPassThrough:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &2897328551548653041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1592,6 +1598,9 @@ MonoBehaviour:
   bulletHitEffect: {fileID: 1312255355084822, guid: bca9020d2c9c915448fb5263a425faf4,
     type: 3}
   capsuleCollider: {fileID: 4160833081701763914}
+  layerPassThrough:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &5345974477687618155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2113,6 +2122,9 @@ MonoBehaviour:
   bulletHitEffect: {fileID: 1312255355084822, guid: bca9020d2c9c915448fb5263a425faf4,
     type: 3}
   capsuleCollider: {fileID: 4160833081701763914}
+  layerPassThrough:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &2675163236868231600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2324,6 +2336,9 @@ MonoBehaviour:
   bulletHitEffect: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   capsuleCollider: {fileID: 4160833081701763914}
+  layerPassThrough:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1673780176526032385
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -129,11 +129,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330fe19542522e64f9251f0917c446df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemInfo: {fileID: 11400000, guid: 4b13413238974cb45a40cac8e7455937, type: 2}
   explosionEffect: {fileID: 6255151742805529067, guid: e397d017dd5374a499ce3b8c28918e83,
     type: 3}
   delay: 1
   radius: 4.5
-  force: 2500
+  force: 1500
   throwForce: 1
 --- !u!82 &8580277311296371654
 AudioSource:
