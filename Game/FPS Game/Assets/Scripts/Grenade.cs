@@ -25,6 +25,9 @@ public class Grenade : MonoBehaviour {
         countdown = delay;
 
         var grenadeRB = GetComponent<Rigidbody>();
+        throwForce = Random.Range(12f, 18);
+
+        Debug.Log(throwForce);
 
         grenadeRB.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
     }
@@ -36,7 +39,6 @@ public class Grenade : MonoBehaviour {
             source.Play();
             Explode();
         }
-        Debug.Log(itemInfo);
     }
 
     void Explode() {
