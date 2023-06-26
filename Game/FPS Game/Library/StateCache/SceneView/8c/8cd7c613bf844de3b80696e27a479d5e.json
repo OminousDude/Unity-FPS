@@ -1,13 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":72.765380859375,"y":-0.3653169572353363,"z":-20.2442626953125},"rotation":{"x":-0.009061448276042939,"y":-0.9782925844192505,"z":0.0072991447523236279,"w":-0.21026283502578736},"size":8.011041641235352,"orthographic":false}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":53.44139862060547,"y":-3.6339831352233888,"z":-24.311784744262697},"rotation":{"x":0.038296639919281009,"y":-0.9530429244041443,"z":0.24374747276306153,"w":0.17957636713981629},"size":7.537535667419434,"orthographic":false}
 >>>>>>> Spokazzonni
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":623.975341796875,"y":156.67282104492188,"z":187.52008056640626},"rotation":{"x":-0.014232750982046128,"y":-0.9895028471946716,"z":-0.14156852662563325,"w":0.04516340047121048},"size":98.70172882080078,"orthographic":false}
->>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":623.975341796875,"y":156.67282104492188,"z":187.52008056640626},"rotation":{"x":-0.014232750982046128,"y":-0.9895028471946716,"z":-0.14156852662563325,"w":0.04516340047121048},"size":98.70172882080078,"orthographic":false}
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)

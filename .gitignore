@@ -2,7 +2,6 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-<<<<<<< HEAD
 /Game/FPS Game/[Ll]ibrary/
 /Game/FPS Game/[Tt]emp/
 /Game/FPS Game/[Oo]bj/
@@ -10,15 +9,6 @@
 /Game/[FPS Game/[Bb]uilds/
 /Game/FPS Game/[Ll]ogs/
 /Game/FPS Game/[Uu]ser[Ss]ettings/
-=======
-/Game/FPS Game/[Ll]ibrary/
-/Game/FPS Game/[Tt]emp/
-/Game/FPS Game/[Oo]bj/
-/Game/FPS Game/[Bb]uild/
-/Game/FPS Game/[Bb]uilds/
-/Game/FPS Game/[Ll]ogs/
-/Game/[FPS Game/Uu]ser[Ss]ettings/
->>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data

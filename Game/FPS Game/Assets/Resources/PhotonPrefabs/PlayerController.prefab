@@ -406,9 +406,6 @@ Transform:
 =======
   m_Father: {fileID: 8913202309253582004}
   m_RootOrder: 1
-<<<<<<< HEAD
->>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
-=======
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &7545825978882867545
@@ -1137,11 +1134,7 @@ Transform:
   - {fileID: 1857148700798772353}
   m_Father: {fileID: 8913202309253582004}
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_RootOrder: 1
-=======
-  m_RootOrder: 2
->>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
 =======
   m_RootOrder: 2
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
@@ -1781,11 +1774,8 @@ GameObject:
   - component: {fileID: 4903870187461076045}
   m_Layer: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
   m_Name: Satchel
 =======
-=======
->>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
   m_Name: GrenadeObject
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
   m_TagString: Untagged
@@ -2130,10 +2120,7 @@ GameObject:
   - component: {fileID: 2675163236868231600}
   - component: {fileID: 4897475492309679339}
 <<<<<<< HEAD
-<<<<<<< HEAD
   - component: {fileID: 7380802411287261966}
-=======
->>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
 =======
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
   m_Layer: 0
