@@ -19,6 +19,7 @@ MonoBehaviour:
     width: 1280
     height: 630.3334
   m_ShowMode: 4
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_Title: Scene
@@ -28,6 +29,9 @@ MonoBehaviour:
 =======
   m_Title: Game
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
+=======
+  m_Title: Project
+>>>>>>> Stashed changes
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -199,6 +203,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< Updated upstream
   controlID: 22
 >>>>>>> Spokazzonni
 =======
@@ -209,6 +214,9 @@ MonoBehaviour:
   vertical: 1
   controlID: 626
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
+=======
+  controlID: 99
+>>>>>>> Stashed changes
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,6 +241,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 17
@@ -242,6 +251,9 @@ MonoBehaviour:
 =======
   controlID: 617
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
+=======
+  controlID: 100
+>>>>>>> Stashed changes
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -335,6 +347,7 @@ MonoBehaviour:
     y: 620
     width: 1474
     height: 327
+<<<<<<< Updated upstream
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -347,6 +360,11 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 15}
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
+=======
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 15}
+>>>>>>> Stashed changes
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
@@ -443,10 +461,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< Updated upstream
     m_HBaseRangeMin: -122.111115
     m_HBaseRangeMax: 122.111115
     m_VBaseRangeMin: -56.388893
     m_VBaseRangeMax: 56.388893
+=======
+    m_HBaseRangeMin: -366.33334
+    m_HBaseRangeMax: 366.33334
+    m_VBaseRangeMin: -169.16667
+    m_VBaseRangeMax: 169.16667
+>>>>>>> Stashed changes
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -479,8 +504,13 @@ MonoBehaviour:
       width: 244.22223
       height: 112.77778
     m_MinimalGUI: 1
+<<<<<<< Updated upstream
   m_defaultScale: 2
   m_LastWindowPixelSize: {x: 2198, y: 1078}
+=======
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 732.6667, y: 359.33334}
+>>>>>>> Stashed changes
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -519,6 +549,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
       m_SelectedIDs: 
@@ -530,6 +561,11 @@ MonoBehaviour:
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
       m_LastClickedID: 0
       m_ExpandedIDs: a216fefffa39feff1a46feff3ab4ffffb0b80000
+=======
+      m_SelectedIDs: 6a4d0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: eafaffff
+>>>>>>> Stashed changes
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Wooden_box_v1_LD1square (5)
@@ -621,7 +657,11 @@ MonoBehaviour:
       collapsed: 0
       displayed: 0
       snapOffset: {x: -241.66666, y: 0}
+<<<<<<< Updated upstream
       snapOffsetDelta: {x: 0, y: 0}
+=======
+      snapOffsetDelta: {x: 0.000030517578, y: 0}
+>>>>>>> Stashed changes
       snapCorner: 1
       id: unity-search-toolbar
       index: 1
@@ -813,6 +853,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 72.76538, y: -0.36531696, z: -20.244263}
@@ -828,6 +869,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 56.514843, y: -1.38797, z: 4.1788363}
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
+=======
+    m_Target: {x: 623.97534, y: 156.67282, z: 187.52008}
+    speed: 2
+    m_Value: {x: 56.514843, y: -1.38797, z: 4.1788363}
+>>>>>>> Stashed changes
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -874,6 +920,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: -0.009061448, y: -0.9782926, z: 0.0072991448, w: -0.21026284}
@@ -901,6 +948,15 @@ MonoBehaviour:
 =======
     m_Value: 8.011042
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
+=======
+    m_Target: {x: -0.014232751, y: -0.98950285, z: -0.14156853, w: 0.0451634}
+    speed: 2
+    m_Value: {x: -0.17546207, y: 0.6017035, z: -0.14754605, w: -0.76602423}
+  m_Size:
+    m_Target: 98.70173
+    speed: 2
+    m_Value: 8.011042
+>>>>>>> Stashed changes
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -980,6 +1036,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     - Assets/Resources/PhotonPrefabs
@@ -989,11 +1046,15 @@ MonoBehaviour:
 =======
     - Assets/Scenes
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
+=======
+    - Assets/Photon/PhotonChat
+>>>>>>> Stashed changes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 46
   m_LastFolders:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/Resources/PhotonPrefabs
@@ -1003,11 +1064,15 @@ MonoBehaviour:
 =======
   - Assets/Scenes
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
+=======
+  - Assets/Photon/PhotonChat
+>>>>>>> Stashed changes
   m_LastFoldersGridSize: 46
   m_LastProjectPath: C:\Users\Maxim\Documents\GitHub\FPS\Game\FPS Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 193.00003}
@@ -1026,6 +1091,12 @@ MonoBehaviour:
     m_LastClickedID: 35060
     m_ExpandedIDs: 00000000c2880000c4880000c6880000c8880000ea88000000ca9a3bffffff7f
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
+=======
+    scrollPos: {x: 0, y: 162}
+    m_SelectedIDs: 2c500000
+    m_LastClickedID: 20524
+    m_ExpandedIDs: 000000000a5000000c5000000e5000001050000000ca9a3b
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1053,6 +1124,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_ExpandedIDs: 000000009e4d0000a04d0000a24d0000a44d0000
@@ -1062,6 +1134,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000c2880000c4880000c6880000c888000000ca9a3bffffff7f
 >>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
+=======
+    m_ExpandedIDs: 000000000a5000000c5000000e50000010500000
+>>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1086,6 +1161,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedInstanceIDs: 
@@ -1095,6 +1171,10 @@ MonoBehaviour:
 =======
     m_SelectedInstanceIDs: ba1f0000
     m_LastClickedInstanceID: 8122
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+>>>>>>> Stashed changes
     m_HadKeyboardFocusLastEvent: 0
 =======
     m_SelectedInstanceIDs: 
