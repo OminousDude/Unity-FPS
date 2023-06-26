@@ -1623,7 +1623,7 @@ MonoBehaviour:
   capsuleCollider: {fileID: 4160833081701763914}
   layerPassThrough:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   isAuto: 0
   shotsFiredInRow: 0
   recoilAmountX: 35
