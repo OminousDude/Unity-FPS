@@ -684,11 +684,14 @@ MonoBehaviour:
   - {fileID: 4534272253547411185}
   - {fileID: 5230998522387500433}
   - {fileID: 7045597800972808579}
+<<<<<<< HEAD
   fireRate: 7.5
   verticalLookRotation: 0
   actualHorizontalLookRotation: 0
   horizontalLookRotation: 0
   currentHealth: 100
+=======
+>>>>>>> parent of 9d0f9481 (Added grenade dmg)
 --- !u!136 &4160833081701763914
 CapsuleCollider:
   m_ObjectHideFlags: 0
