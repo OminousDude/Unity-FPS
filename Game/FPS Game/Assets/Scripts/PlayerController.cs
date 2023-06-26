@@ -24,8 +24,10 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
     int itemIndex;
 	int previousItemIndex = -1;
 
-	float verticalLookRotation;
-	bool grounded;
+	public float verticalLookRotation;
+	public float actualHorizontalLookRotation;
+    public float horizontalLookRotation;
+    bool grounded;
 	Vector3 smoothMoveVelocity;
 	Vector3 moveAmount;
 
@@ -106,18 +108,26 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 		
 		var item = items[itemIndex];
 
-		if (!item.GetComponent<SingleShotGun>().isAuto) {
+		var gun = item.GetComponent<SingleShotGun>();
+
+
+        if (!gun.isAuto) {
 			if (Input.GetMouseButtonDown(0)) {
 				item.Use();
 			}
         }
 		
-		if (item.GetComponent<SingleShotGun>().isAuto) {
+		if (gun.isAuto) {
 			if (Input.GetMouseButton(0)) {
 				if (Time.time - lastShot > 1 / fireRate) {
-					lastShot = Time.time;
+					gun.shotsFiredInRow++;
+                    lastShot = Time.time;
 					item.Use();
 				}
+			}
+
+			if (Input.GetMouseButtonUp(0)) {
+				gun.shotsFiredInRow = 0;
 			}
         }
 
@@ -129,12 +139,14 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 
     void Look()
 	{
-		transform.Rotate(Vector3.up * Input.GetAxisRaw("Mouse X") * mouseSensitivity);
+        actualHorizontalLookRotation = Input.GetAxis("Mouse X") * mouseSensitivity;
 
-		verticalLookRotation += Input.GetAxisRaw("Mouse Y") * mouseSensitivity;
+        verticalLookRotation += Input.GetAxis("Mouse Y") * mouseSensitivity;
+
+        transform.Rotate(Vector3.up * actualHorizontalLookRotation);
 		verticalLookRotation = Mathf.Clamp(verticalLookRotation, -90f, 90f);
 
-		cameraHolder.transform.localEulerAngles = Vector3.left * verticalLookRotation;
+		cameraHolder.transform.localEulerAngles = Vector3.left * verticalLookRotation + Vector3.up * horizontalLookRotation;
 	}
 
 	void Move()
