@@ -26,6 +26,9 @@ public class Grenade : MonoBehaviour {
         countdown = Random.Range(delay - delay/3, delay + delay/3);
 
         var grenadeRB = GetComponent<Rigidbody>();
+        throwForce = Random.Range(12f, 18);
+
+        Debug.Log(throwForce);
 
         var randomVal = Random.Range(throwForce - throwForce / 3, throwForce + throwForce / 3);
 
