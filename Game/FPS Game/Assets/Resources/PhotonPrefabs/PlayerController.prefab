@@ -400,8 +400,13 @@ Transform:
   m_LocalScale: {x: 0.38871306, y: 0.0647855, z: 0.5557431}
   m_ConstrainProportionsScale: 0
   m_Children: []
+<<<<<<< HEAD
   m_Father: {fileID: 1488053958305132835}
   m_RootOrder: 0
+=======
+  m_Father: {fileID: 8913202309253582004}
+  m_RootOrder: 1
+>>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &7545825978882867545
 BoxCollider:
@@ -1125,7 +1130,11 @@ Transform:
   - {fileID: 8197027354080740875}
   - {fileID: 1857148700798772353}
   m_Father: {fileID: 8913202309253582004}
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+  m_RootOrder: 2
+>>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3231580026439799589
 GameObject:
@@ -1761,7 +1770,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4903870187461076045}
   m_Layer: 0
+<<<<<<< HEAD
   m_Name: Satchel
+=======
+  m_Name: GrenadeObject
+>>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2103,7 +2116,10 @@ GameObject:
   - component: {fileID: 661285188742022458}
   - component: {fileID: 2675163236868231600}
   - component: {fileID: 4897475492309679339}
+<<<<<<< HEAD
   - component: {fileID: 7380802411287261966}
+=======
+>>>>>>> parent of 3c514cf7 (Fixed Gun Clipping)
   m_Layer: 0
   m_Name: Rifle
   m_TagString: Untagged
