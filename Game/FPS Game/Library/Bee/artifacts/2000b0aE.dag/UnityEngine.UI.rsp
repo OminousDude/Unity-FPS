@@ -316,8 +316,6 @@
 -r:"C:/Users/spack/Desktop/Personal/Games/FPS/Game/FPS Game/Library/PackageCache/com.unity.collab-proxy@2.0.3/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
 -r:"C:/Users/spack/Desktop/Personal/Games/FPS/Game/FPS Game/Library/PackageCache/com.unity.collab-proxy@2.0.3/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
 -r:"C:/Users/spack/Desktop/Personal/Games/FPS/Game/FPS Game/Library/PackageCache/com.unity.collab-proxy@2.0.3/Lib/Editor/PlasticSCM/unityplastic.dll"
-"Library/PackageCache/com.unity.render-pipelines.universal@12.1.11/Editor/ShaderGUI/MaterialAssemblyReference/RawRenderQueue.cs"
-"Library/PackageCache/com.unity.shadergraph@12.1.11/Editor/Generation/Targets/BuiltIn/Editor/ShaderGUI/MaterialAssemblyReference/RawRenderQueue.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/AxisEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/BaseEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs"
